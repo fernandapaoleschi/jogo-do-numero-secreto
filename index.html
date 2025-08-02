@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=0AYKwLMe"></script>
+  <title>Acerte o número secreto</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="cartao-jogo">
+      <div class="cabecalho-jogo">
+        <h1></h1>
+        <p class="subtitulo"></p>
+      </div>
+      
+      <div class="conteudo-jogo">
+        <div class="campo-numero">
+          <input type="number" id="number-guess" min="1" max="10" placeholder="?" class="entrada-numero">
+          <div class="intervalo-numero">1-10</div>
+        </div>
+        
+        <button onclick="verificarChute()" class="botao botao-adivinhar">Adivinhar</button>
+        
+        <div class="area-feedback">
+          <div class="mensagem-feedback">
+            Escreva um número e aperte "Adivinhar"
+          </div>
+        </div>
+        
+        <button onclick="reiniciarJogo()" id="reiniciar" class="botao botao-novo-jogo" disabled>Novo jogo</button>
+      </div>
+      
+      <div class="decoracao decoracao-1"></div>
+      <div class="decoracao decoracao-2"></div>
+      <div class="decoracao decoracao-3"></div>
+      <script src="app.js" defer></script>
+    </div>
+  </div>
+</body>
+</html>
+
