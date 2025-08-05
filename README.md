@@ -3,7 +3,7 @@
 <h2>📖 Sobre</h2>
 <p>
   Projeto criado durante os cursos de <strong>Lógica de Programação</strong> da <a href="https://www.alura.com.br/">Alura</a>.  
-  O objetivo é adivinhar um número secreto aleatório entre 1 e 50.  
+  O objetivo é adivinhar um número secreto aleatório entre 1 e 10.  
   O jogo fornece feedback visual e sonoro com ajuda da <strong>Web Speech API</strong>.
 </p>
 
