@@ -6,7 +6,7 @@
   --secondary: #a855f7;
   --accent: #8b5cf6;
   --background: #0f172a;
-  --card-bg: #1e293b; /* removido rgba */
+  --card-bg: #1e293b;
   --text: #f8fafc;
   --text-muted: #cbd5e1;
   --success: #10b981;
@@ -28,7 +28,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: none; /* removido gradiente */
   padding: 20px;
 }
 
@@ -43,7 +42,6 @@ body {
   border-radius: var(--border-radius);
   padding: 2.5rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  /* backdrop-filter: blur(10px); removido */
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -63,7 +61,7 @@ h1 {
   background: linear-gradient(to right, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: var(--primary); /* fallback para mobile */
   letter-spacing: -0.5px;
 }
 
@@ -93,7 +91,7 @@ h1 {
   height: 80px;
   font-size: 2.5rem;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.12); /* aumentada opacidade */
+  background-color: rgba(255, 255, 255, 0.12);
   border: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: var(--border-radius);
   color: var(--text);
