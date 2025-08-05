@@ -1,10 +1,5 @@
 :root {
   color-scheme: dark;
-
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
-  --secondary: #a855f7;
-  --accent: #8b5cf6;
   --background: #0f172a;
   --card-bg: #1e293b;
   --text: #f8fafc;
@@ -58,10 +53,10 @@ h1 {
   font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  background: linear-gradient(to right, var(--primary), var(--secondary));
+  background: linear-gradient(to right, #a855f7, #8b5cf6); /* fixo */
   -webkit-background-clip: text;
   background-clip: text;
-  color: var(--primary); /* fallback para mobile */
+  color: transparent;
   letter-spacing: -0.5px;
 }
 
@@ -102,7 +97,7 @@ h1 {
 
 .entrada-numero:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: #8b5cf6;
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.3);
 }
 
@@ -127,7 +122,7 @@ h1 {
 }
 
 .botao {
-  background: linear-gradient(135deg, var(--primary), var(--accent));
+  background: linear-gradient(135deg, #a855f7, #8b5cf6); /* fixo */
   color: white;
   border: none;
   padding: 0.8rem 2rem;
@@ -145,15 +140,10 @@ h1 {
 .botao:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
-  background: linear-gradient(135deg, var(--primary-dark), var(--accent));
 }
 
 .botao:active {
   transform: translateY(1px);
-}
-
-.botao-adivinhar {
-  background: linear-gradient(135deg, var(--primary), var(--accent));
 }
 
 .botao-novo-jogo:disabled {
@@ -180,7 +170,6 @@ h1 {
   color: var(--text-muted);
 }
 
-/* Elementos decorativos */
 .decoracao {
   position: absolute;
   border-radius: 50%;
@@ -192,7 +181,7 @@ h1 {
 .decoracao-1 {
   width: 150px;
   height: 150px;
-  background-color: var(--primary);
+  background-color: #6366f1;
   top: -50px;
   left: -50px;
 }
@@ -200,7 +189,7 @@ h1 {
 .decoracao-2 {
   width: 200px;
   height: 200px;
-  background-color: var(--secondary);
+  background-color: #a855f7;
   bottom: -80px;
   right: -80px;
 }
@@ -208,12 +197,11 @@ h1 {
 .decoracao-3 {
   width: 100px;
   height: 100px;
-  background-color: var(--accent);
+  background-color: #8b5cf6;
   bottom: 50px;
   left: -30px;
 }
 
-/* Responsivo */
 @media (max-width: 480px) {
   .cartao-jogo {
     padding: 1.5rem;
