@@ -1,10 +1,12 @@
 :root {
+  color-scheme: dark;
+
   --primary: #6366f1;
   --primary-dark: #4f46e5;
   --secondary: #a855f7;
   --accent: #8b5cf6;
   --background: #0f172a;
-  --card-bg: rgba(30, 41, 59, 0.8);
+  --card-bg: #1e293b; /* removido rgba */
   --text: #f8fafc;
   --text-muted: #cbd5e1;
   --success: #10b981;
@@ -26,9 +28,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 25%),
-    radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+  background-image: none; /* removido gradiente */
   padding: 20px;
 }
 
@@ -43,7 +43,7 @@ body {
   border-radius: var(--border-radius);
   padding: 2.5rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); removido */
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -93,8 +93,8 @@ h1 {
   height: 80px;
   font-size: 2.5rem;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.12); /* aumentada opacidade */
+  border: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: var(--border-radius);
   color: var(--text);
   font-weight: 600;
@@ -159,17 +159,12 @@ h1 {
 }
 
 .botao-novo-jogo:disabled {
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: none;
-}
-
-.botao-novo-jogo:disabled {
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
 .area-feedback {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.08);
   border-radius: var(--border-radius);
   padding: 1.5rem;
   width: 100%;
